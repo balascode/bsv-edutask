@@ -6,11 +6,11 @@ def obj():
     return {"clg" : "BTH"}
 
 @pytest.mark.unit
-def test_hasAttribute_True():
+def test_hasAttribute_True(obj):
     assert hasAttribute(obj, "clg") == True
 
 @pytest.mark.unit
-def test_hasAttribute_False():
+def test_hasAttribute_False(obj):
     assert hasAttribute(obj, "name") == False
 
 @pytest.mark.unit
